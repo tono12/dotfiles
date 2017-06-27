@@ -7,9 +7,9 @@ red = #e60053
 yellow = #c7ae95
 green = #7ac142
 
-background = #994411
-background-alt = #cc6633
-foreground = #ddbbbb
+background = #2f343f
+background-alt = #2b2e39
+foreground = #d7dfed
 foreground-alt = #ffffff
 
 

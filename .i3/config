@@ -182,12 +182,12 @@ bindsym $mod+r mode "resize"
 bindsym Print exec scrot ~/Pictures/screenshot.png
 
 #FOR ARC DARK
-#set $cborder  #2b2e39
-#set $cbg_foc  #383c4a
-#set $cbg_unf  #2f343f
-#set $ct_foc   #d7dfed
-#set $ct_unf   #78808d
-#set $cindic   #4084d6
+set $cborder  #2b2e39
+set $cbg_foc  #383c4a
+set $cbg_unf  #2f343f
+set $ct_foc   #d7dfed
+set $ct_unf   #78808d
+set $cindic   #4084d6
 
 #FOR DARKSOLARIZED
 #set $cborder  #073642
@@ -209,13 +209,13 @@ bindsym Print exec scrot ~/Pictures/screenshot.png
 
 #FOR TPBIRD
 #/home/tono/Pictures/bird.png	#d6b6b6,#70525c,#331a12,#e6cdbd,#25190d	
-set $cborder  #cc6633
-set $cbg_foc  #cc6633
-set $cbg_unf  #994411
-set $ct_unf   #aa8888
-set $ct_foc   #ddbbbb
-set $cindic   #000000
-set $curgent  #887799
+#set $cborder  #cc6633
+#set $cbg_foc  #cc6633
+#set $cbg_unf  #994411
+#set $ct_unf   #aa8888
+#set $ct_foc   #ddbbbb
+#set $cindic   #000000
+#set $curgent  #887799
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec "rofi -show run -modi run,drun -lines 4 -eh 2 -opacity \\"85\\" -bw 0 -color-window \\"$cbg_unf, $cbg_unf, #003642\\" -color-normal \\"$cbg_unf, #819396, $cbg_unf, #003642, #819396\\" -color-active \\"$cbg_unf, #008ed4, $cbg_unf, #003642, #008ed4\\" -color-urgent \\"$cbg_unf, #da4281, $cbg_unf, #003642, #da4281\\""
@@ -248,9 +248,8 @@ client.urgent           $curgent            $curgent           $ct_foc          
 
 #startup
 exec --no-startup-id compton -f
-exec_always --no-startup-id feh --bg-max ~/Pictures/bird.png
+exec_always --no-startup-id feh --bg-max ~/Pictures/chalkboard.png
 exec --no-startup-id setxkbmap es
-#exec_always --no-startup-id xrandr --output HDMI1 --right-of -eDP1 
 exec_always --no-startup-id ~/.polybar/launcher.sh
 
 # workspace default monitors
