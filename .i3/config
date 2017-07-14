@@ -33,6 +33,9 @@ set $down k
 set $left j
 set $right semicolon
 
+gaps inner 10
+gaps outer 5
+
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -216,9 +219,9 @@ set $cindic   #4084d6
 #set $ct_foc   #ddbbbb
 #set $cindic   #000000
 #set $curgent  #887799
-
+#003642
 # start dmenu (a program launcher)
-bindsym $mod+d exec "rofi -show run -modi run,drun -lines 4 -eh 2 -opacity \\"85\\" -bw 0 -color-window \\"$cbg_unf, $cbg_unf, #003642\\" -color-normal \\"$cbg_unf, #819396, $cbg_unf, #003642, #819396\\" -color-active \\"$cbg_unf, #008ed4, $cbg_unf, #003642, #008ed4\\" -color-urgent \\"$cbg_unf, #da4281, $cbg_unf, #003642, #da4281\\""
+bindsym $mod+d exec "rofi -show run -modi run,drun -lines 4 -eh 2 -opacity \\"85\\" -bw 0 -color-window \\"$cbg_unf, $cbg_unf, #003642\\" -color-normal \\"$cbg_unf, #819396, $cbg_unf, $cindic, $ct_foc\\" -color-active \\"$cbg_unf, #008ed4, $cbg_unf, #003642, #008ed4\\" -color-urgent \\"$cbg_unf, #da4281, $cbg_unf, #003642, #da4281\\""
 
 
 
@@ -248,8 +251,8 @@ client.urgent           $curgent            $curgent           $ct_foc          
 
 #startup
 exec --no-startup-id compton -f
-exec_always --no-startup-id feh --bg-max ~/Pictures/chalkboard.png
-exec --no-startup-id setxkbmap es
+exec_always --no-startup-id feh --bg-max ~/Pictures/chalkboard.jpg
+exec --no-startup-id setxkbmap -layout us -variant altgr-intl
 exec_always --no-startup-id ~/.polybar/launcher.sh
 
 # workspace default monitors

@@ -77,7 +77,7 @@
  '(custom-enabled-themes (quote (misterioso)))
  '(custom-safe-themes
    (quote
-    ("a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+    ("a0feb1322de9e26a4d209d1cfa236deaf64662bb604fa513cca6a057ddf0ef64" "04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "ea4ae3c179b4fd23f50b50062ca0312f7bf0151aa4ba8c10088bba87943d8b93" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(fci-rule-color "#eee8d5")
  '(highlight-changes-colors (quote ("#d33682" "#6c71c4")))
  '(highlight-symbol-colors
@@ -109,7 +109,7 @@
  '(org-agenda-files (quote ("~/orgfiles/dailyplan.org" "~/orgfiles/week.org")))
  '(package-selected-packages
    (quote
-    (alect-themes auctex-latexmk multiple-cursors tabbar-ruler apropospriate-theme auctex rainbow-delimiters persistent-soft ergoemacs-mode solarized-theme)))
+    (zerodark-theme alect-themes auctex-latexmk multiple-cursors tabbar-ruler apropospriate-theme auctex rainbow-delimiters persistent-soft ergoemacs-mode solarized-theme)))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
  '(show-paren-mode t)
@@ -154,12 +154,7 @@
  ;; If there is more than one, they won't work right.
  )
 
-(load-theme 'alect-dark t)
-
-(setq ergoemacs-theme nil)
-(setq ergoemacs-keyboard-layout "es")
-(require 'ergoemacs-mode)
-(ergoemacs-mode 1)
+(load-theme 'zerodark t)
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
