@@ -102,6 +102,7 @@
  '(hl-fg-colors
    (quote
     ("#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3")))
+ '(ispell-dictionary "espanol")
  '(magit-diff-use-overlays nil)
  '(nrepl-message-colors
    (quote
@@ -140,6 +141,9 @@
      (340 . "#268fc6")
      (360 . "#268bd2"))))
  '(vc-annotate-very-old-color nil)
+ '(verilog-auto-indent-on-newline t)
+ '(verilog-auto-newline nil)
+ '(verilog-indent-level 3)
  '(weechat-color-list
    (quote
     (unspecified "#fdf6e3" "#eee8d5" "#990A1B" "#dc322f" "#546E00" "#859900" "#7B6000" "#b58900" "#00629D" "#268bd2" "#93115C" "#d33682" "#00736F" "#2aa198" "#657b83" "#839496")))
@@ -157,6 +161,8 @@
 (load-theme 'zerodark t)
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+(setq tramp-default-method "ssh")
 
 (require 'multiple-cursors)
 (global-set-key (kbd "C-S-c") 'mc/edit-lines)

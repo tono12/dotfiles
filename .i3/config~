@@ -34,7 +34,7 @@ set $left j
 set $right semicolon
 
 gaps inner 10
-gaps outer 10
+gaps outer 5
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -219,10 +219,9 @@ set $cindic   #4084d6
 #set $ct_foc   #ddbbbb
 #set $cindic   #000000
 #set $curgent  #887799
-
+#003642
 # start dmenu (a program launcher)
 bindsym $mod+d exec "rofi -show run -modi run,drun -lines 4 -eh 2 -opacity \\"85\\" -bw 0 -color-window \\"$cbg_unf, $cbg_unf, #003642\\" -color-normal \\"$cbg_unf, #819396, $cbg_unf, $cindic, $ct_foc\\" -color-active \\"$cbg_unf, #008ed4, $cbg_unf, #003642, #008ed4\\" -color-urgent \\"$cbg_unf, #da4281, $cbg_unf, #003642, #da4281\\""
-
 
 
 
@@ -253,20 +252,20 @@ client.urgent           $curgent            $curgent           $ct_foc          
 #startup
 exec --no-startup-id compton -f
 exec_always --no-startup-id feh --bg-max ~/Pictures/chalkboard.jpg
-exec --no-startup-id setxkbmap -layout us -variant altgr-intl
-exec_always --no-startup-id ~/.polybar/launchersingle.sh
+exec --no-startup-id setxkbmap -layout es
+exec_always --no-startup-id ~/.polybar/launcher.sh
 
 # workspace default monitors
-#workspace $ws1 output eDP1
-#workspace $ws2 output eDP1
-#workspace $ws3 output eDP1
-#workspace $ws4 output HDMI1
-#workspace $ws5 output HDMI1
-#workspace $ws6 output HDMI1
-#workspace $ws7 output HDMI1
-#workspace $ws8 output HDMI1
-#workspace $ws9 output HDMI1
-#workspace $ws10 output HDMI1
+workspace $ws1 output eDP1
+workspace $ws2 output eDP1
+workspace $ws3 output eDP1
+workspace $ws4 output HDMI1
+workspace $ws5 output HDMI1
+workspace $ws6 output HDMI1
+workspace $ws7 output HDMI1
+workspace $ws8 output HDMI1
+workspace $ws9 output HDMI1
+workspace $ws10 output HDMI1
 
 #keybindings
 bindsym $mod+Shift+f exec firefox-nightly
@@ -280,7 +279,6 @@ bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86HomePage exec /home/tono/.i3/scripts/toggle_pa_profile.sh
 
 assign [class="Firefox"] $ws5
-assign [class="Nightly"] $ws5
 assign [class="Emacs"] $ws4
 assign [class="Vivado"] $ws7
 assign [class="Thunar"] $ws2

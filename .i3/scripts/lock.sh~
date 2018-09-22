@@ -20,9 +20,5 @@ $SCREENSHOT
 convert $IMAGE -resize 10%
 convert $IMAGE -blur $BLURTYPE $IMAGE
 convert $IMAGE -resize 1000%
-playerctl play-pause
-amixer -q sset Master toggle
-i3lock -n -i $IMAGE
+i3lock -i $IMAGE
 rm $IMAGE
-amixer -q sset Master toggle
-playerctl play-pause

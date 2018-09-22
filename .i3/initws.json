@@ -1,0 +1,76 @@
+// vim:ts=4:sw=4:et
+{
+    // splith split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 362,
+               "width": 655,
+               "x": 0,
+               "y": 0
+            },
+            "name": "cmus",
+            "percent": 0.5,
+            "swallows": [
+               {
+                  "class": "^Mate\\-terminal$",
+                  "instance": "^mate\\-terminal$",
+                  "title": "cmus"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 362,
+               "width": 655,
+               "x": 0,
+               "y": 0
+            },
+            "name": "SSHTerminal - tono@spdhvn:~",
+            "percent": 0.5,
+            "swallows": [
+               {
+                  "class": "^Mate\\-terminal$",
+                  "instance": "^mate\\-terminal$",
+                  "title": "^SSHTerminal\\ \\-\\ tono\\@spdhvn\\:\\~$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 362,
+       "width": 655,
+       "x": 0,
+       "y": 0
+    },
+    "name": "Terminal",
+    "percent": 0.5,
+    "swallows": [
+       {
+          "class": "^Mate\\-terminal$",
+          "instance": "^mate\\-terminal$",
+          "title": "^Terminal$"
+       }
+    ],
+    "type": "con"
+}
+

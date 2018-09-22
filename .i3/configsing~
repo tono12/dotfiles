@@ -33,9 +33,6 @@ set $down k
 set $left j
 set $right semicolon
 
-gaps inner 10
-gaps outer 10
-
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -280,7 +277,6 @@ bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86HomePage exec /home/tono/.i3/scripts/toggle_pa_profile.sh
 
 assign [class="Firefox"] $ws5
-assign [class="Nightly"] $ws5
 assign [class="Emacs"] $ws4
 assign [class="Vivado"] $ws7
 assign [class="Thunar"] $ws2
