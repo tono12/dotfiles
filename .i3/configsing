@@ -252,7 +252,7 @@ client.urgent           $curgent            $curgent           $ct_foc          
 
 #startup
 exec --no-startup-id compton -f
-exec_always --no-startup-id feh --bg-max ~/Pictures/chalkboard.jpg
+exec_always --no-startup-id feh --bg-max ~/screen.jpg
 exec --no-startup-id setxkbmap -layout us -variant altgr-intl
 exec_always --no-startup-id ~/.polybar/launchersingle.sh
 
@@ -269,7 +269,7 @@ exec_always --no-startup-id ~/.polybar/launchersingle.sh
 #workspace $ws10 output HDMI1
 
 #keybindings
-bindsym $mod+Shift+f exec firefox-nightly
+bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+w exec emacs
 bindsym $mod+Shift+z exec thunar
 bindsym XF86AudioRaiseVolume exec amixer -q sset Master 5%+ unmute

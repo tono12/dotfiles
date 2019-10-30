@@ -33,7 +33,6 @@ font-2 = FontAwesome:size=12;2
 font-3 = "Material Icons:size=12;2"
 
 modules-left = i3 xwindow
-modules-center = pomo
 modules-right = filesystem memory cpu temperature volume eth battery separator date separator powermenu
 
 tray-position = right
@@ -142,11 +141,6 @@ label-padding = 2
 ;;format-prefix-foreground = ${colors.foreground-alt}
 ;;format-padding = 1
 ;;
-[module/pomo]
-type = custom/script
-interval = 10
-exec = pomo status
-format-prefix = " "
 
 [module/filesystem]
 type = internal/fs

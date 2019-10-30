@@ -251,7 +251,7 @@ client.urgent           $curgent            $curgent           $ct_foc          
 
 #startup
 exec --no-startup-id compton -f
-exec_always --no-startup-id feh --bg-max ~/Pictures/chalkboard.jpg
+exec_always --no-startup-id feh --bg-center ~/screen.jpg
 exec --no-startup-id setxkbmap -layout es
 exec_always --no-startup-id ~/.polybar/launcher.sh
 
@@ -268,7 +268,7 @@ workspace $ws9 output HDMI-1
 workspace $ws10 output HDMI-1
 
 #keybindings
-bindsym $mod+Shift+f exec firefox-nightly
+bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+w exec emacs
 bindsym $mod+Shift+z exec thunar
 bindsym XF86AudioRaiseVolume exec amixer -q sset Master 5%+ unmute
